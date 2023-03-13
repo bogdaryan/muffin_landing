@@ -180,10 +180,11 @@ body {
 }
 
 .title {
-  max-width: 647px;
+  max-width: 620px;
   font-size: 48px;
   line-height: 60px;
   margin-top: 24px;
+  font-weight: 700;
 }
 
 .subtitle {
@@ -529,6 +530,8 @@ body {
   background: url(../images/callback-cloud.png) no-repeat scroll center top;
   background-color: #081130;
   padding-top: 300px;
+  padding-bottom: 80px;
+  overflow: hidden;
 }
 .callback .callback__inner {
   background: white;
@@ -610,7 +613,7 @@ body {
 footer {
   background-color: #081130;
   text-align: center;
-  padding: 80px 0px;
+  padding-bottom: 80px;
 }
 footer li {
   font-size: 12px;
@@ -668,9 +671,6 @@ footer li:last-child {
   }
 }
 @media (max-width: 850px) {
-  .callback {
-    overflow: hidden;
-  }
   .callback__form {
     display: inline-flex;
     flex-direction: column;
@@ -822,7 +822,7 @@ footer li:last-child {
     right: 0;
   }
   .sketch__inner {
-    min-height: 100vh;
+    min-height: calc(100vh + 260px);
   }
 }
 @media (max-width: 360px) {
