@@ -225,6 +225,7 @@ body {
 .menu {
 	background-color: white;
 	padding-bottom: 15px;
+	overflow: hidden;
 
 	.menu__title {
 		margin-bottom: 50px;
@@ -304,6 +305,7 @@ body {
 .sketch {
 	background-image: url(../images/sketch-bg.jpg);
 	@include default-properties-bg();
+	overflow: hidden;
 
 	&__inner {
 		min-height: 1352px;
@@ -414,8 +416,8 @@ body {
 	padding-bottom: 308px;
 	background-color: #081130;
 	position: relative;
-
 	text-align: center;
+	overflow: hidden;
 
 	&::before {
 		content: url(../images/reviews-top-cloud.png);
@@ -772,6 +774,10 @@ footer {
 }
 
 @media (max-width: 850px) {
+	.callback {
+		overflow: hidden;
+	}
+
 	.callback__form {
 		display: inline-flex;
 		flex-direction: column;

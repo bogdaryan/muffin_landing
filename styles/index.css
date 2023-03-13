@@ -210,6 +210,7 @@ body {
 .menu {
   background-color: white;
   padding-bottom: 15px;
+  overflow: hidden;
 }
 .menu .menu__title {
   margin-bottom: 50px;
@@ -274,6 +275,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 .sketch__inner {
   min-height: 1352px;
@@ -366,6 +368,7 @@ body {
   background-color: #081130;
   position: relative;
   text-align: center;
+  overflow: hidden;
 }
 .reviews::before {
   content: url(../images/reviews-top-cloud.png);
@@ -665,6 +668,9 @@ footer li:last-child {
   }
 }
 @media (max-width: 850px) {
+  .callback {
+    overflow: hidden;
+  }
   .callback__form {
     display: inline-flex;
     flex-direction: column;
